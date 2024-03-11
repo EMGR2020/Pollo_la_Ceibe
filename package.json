@@ -1,0 +1,30 @@
+{
+  "dependencies": {
+    "express": "^4.18.3",
+    "mysql2": "^3.9.2"
+  },
+  "name": "chargingsystem",
+  "version": "1.0.0",
+  "description": "Sistema de Ventas",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EMGR2020/Pollo_la_Ceibe.git"
+  },
+  "keywords": [
+    "ventas",
+    "comidad",
+    "\"Sistema",
+    "de",
+    "Ventas\""
+  ],
+  "author": "Ebed Moises Gómez Rosales",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EMGR2020/Pollo_la_Ceibeissues"
+  },
+  "homepage": "https://github.com/EMGR2020/Pollo_la_Ceibe#readme"
+}

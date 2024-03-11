@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+/*
+.roboto-thin {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  .roboto-light {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .roboto-medium {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .roboto-bold {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .roboto-black {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  .roboto-thin-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+  }
+  
+  .roboto-light-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .roboto-regular-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .roboto-medium-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  .roboto-bold-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  .roboto-black-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+  } 
+*/
+body {
+    margin: 0px;
+    padding: 0px;
+}
+.contenedorPadre_Login {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+.contenedorFormulario_Login {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(248, 248, 248);
+}
+.contenidoFormulario_Login {
+    width: 50%;
+    height: 70%;
+}
+.contenidoFormulario_Login>h1 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 28px;
+}
+.contenidoFormulario_Login>h2 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+}
+.contenidoFormulario_Login>form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.contenidoFormulario_Login>form>label {
+    margin-top: 20px;
+    position: relative;
+    left: 10px;
+    font-size: 16px;
+}
+.contenidoFormulario_Login>form>input{
+    width: 340px;
+    height: 30px;
+    padding: 5px;
+    border-radius: 20px;
+    border: 1px solid;
+    font-size: 16px;
+    padding-left: 10px;
+    margin-top: 10px;
+}
+.contenidoFormulario_Login>form>input[type="submit"] {
+    width: 350px;
+    height: 40px;
+    padding: 10px;
+    border-radius: 20px;
+    margin-top: 40px;
+    border: none;
+    background-color: rgb(43, 92, 142);
+    color: white;
+    font-size: 16px;
+}
+.footer_login {
+    margin-top: 120px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 17.5px;
+}
+.contenedorImagen_login {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+.contenedorImagen_login {
+    background-image: url("../assets/fondo_morado_login.jpg");
+    background-size: cover; /* Para cubrir todo el fondo */
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.imgGlassmorphism_Login {
+    height: 480px;
+    width: 380px;
+    border-radius: 20px;
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(43, 93, 192, 0.65);
+    border: 1px solid rgba(29, 29, 29, 0.125);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.imgGlassmorphism_Login>img {
+    width: 300px;
+    position: relative;
+    top: 120px;
+}
+
+.imgGlassmorphism_Login>h3 {
+    position: relative;
+    top: 130px;
+    font-size: 24px;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    color: white;
+    margin-left: 20px;
+}
+.emoji_login_1 {
+    position: relative;
+    font-size: 100px;
+    top: -20px;
+    left: -200px;
+    transform: rotate(-45deg);
+}
+.emoji_login_2 {
+    position: relative;
+    right: -200px;
+    font-size: 100px;
+    top: -400px;
+    transform: rotate(45deg);
+}

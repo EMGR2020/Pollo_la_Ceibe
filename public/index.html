@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de Sesion</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <div class="contenedorPadre_Login">
+        <div class="contenedorFormulario_Login">
+            <div class="contenidoFormulario_Login">
+                <h1>Inicia Sesion <span>👍</span></h1>
+                <h2>Es hora de que mejores tu negocio</h2>
+                <!-- Modificación del formulario para enviar datos mediante AJAX -->
+                <form id="loginForm" method="POST">
+                    <label for="usuario">Ingrese su Usuario:</label>
+                    <input type="text" id="usuario" name="usuario" required autocomplete="off">
+                    <label for="contraseña">Ingrese su Contraseña:</label>
+                    <input type="password" id="contraseña" name="contraseña" required autocomplete="off">
+                    <input type="submit" value="Iniciar Sesion">
+                </form>
+                <div class="footer_login">@2024 Neway todos los derechos reservados</div>
+            </div>
+        </div>
+        <div class="contenedorImagen_login">
+            <div class="imgGlassmorphism_Login">
+                <h3>Que esperas, Lo mejor para tu negocio esta a un paso de ti.</h3>
+                <img src="./assets/chica_glassmorphism_login.png" alt="chica_feliz">
+                <span class="emoji_login_1">😍</span>
+                <span class="emoji_login_2">👌</span>
+            </div>
+        </div>  
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#loginForm').submit(function(e){
+                e.preventDefault();
+                $.ajax({
+                    type: "POST",
+                    url: "/login",
+                    data: $(this).serialize(),
+                    success: function(response){
+                        // Mostrar la alerta utilizando SweetAlert2
+                        $('body').append(response);
+                    },
+                    error: function(xhr, status, error) {
+                        console.error('Error al procesar la solicitud:', error);
+                        // Mostrar una alerta de error utilizando SweetAlert2
+                        Swal.fire({
+                            icon: 'error',
+                            title: 'Oops...',
+                            text: 'Hubo un error al procesar su solicitud. Por favor, inténtelo de nuevo más tarde.'
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
