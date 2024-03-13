@@ -202,3 +202,143 @@ body {
     top: -400px;
     transform: rotate(45deg);
 }
+.contenedor_home {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+header {
+  width: 100%;
+  border-bottom: solid 1px;
+  display: flex;
+  height: 80px;
+  justify-content: space-around;
+  align-items: center;
+}
+svg {
+  position: relative;
+  top: 5px;
+}
+ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  width: 350px;
+}
+li {
+  color: rgb(14, 58, 134);
+  font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 16px;
+}
+.logo_home>span {
+  color: rgb(14, 58, 134);
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+}
+.contenedor_home {
+  width: 100%;
+  height: auto;
+}
+.botones_home {
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+}
+.btn_1_home {
+  color: rgb(14, 58, 134);
+  padding: 10px;
+  border-radius: 20px;
+  border: solid 1px;
+  background-color: white;
+  font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 16px;
+}
+.btn_2_home {
+  background-color: rgb(14, 58, 134);
+  padding: 10px;
+  border-radius: 20px;
+  border: solid 1px;
+  color: white;
+  font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 16px;
+}
+.frase_home {
+  width: 82%;
+  height: 300px;
+  display: flex;
+  margin-top: 100px;
+}
+.h1_home {
+  width: 50%;
+  position: relative;
+  top: 50px;
+}
+.h1_home>h1 {
+  color: rgb(70, 70, 70);
+  font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    position: relative;
+    top: 30px;
+}
+.png_home {
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+.lord-icon {
+  position: relative;
+  left: 100px;
+}
+.opciones_home {
+  width: 82%;
+  height: 400px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 300px;
+}
+.opciones_home>div>h2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: rgb(255, 255, 255);
+  width: 100%;
+  text-align: center;
+}
+.inventario_home {
+  background-color: rgb(24, 159, 200);
+}
+.menu_home {
+  background-color: rgb(227, 68, 68);
+}
+.cierre_home {
+  background-color: rgb(107, 65, 146);
+}
+.opciones_home>div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 25%;
+  height: 280px;
+  border: solid 2px;
+  border-radius: 20px;
+}
+.opciones_home>div>svg {
+  width: 100%;
+}
+.svg_arrow_down {
+  position: relative;
+  top: 120px;
+}
